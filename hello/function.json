@@ -1,0 +1,16 @@
+{
+  "scriptFile" : "..\\esbfunctionapp-1.0.jar",
+  "entryPoint" : "com.adecco.esb.Function.hello",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "name" : "req",
+    "direction" : "in",
+    "authLevel" : "anonymous",
+    "methods" : [ "get", "post" ]
+  }, {
+    "type" : "http",
+    "name" : "$return",
+    "direction" : "out"
+  } ],
+  "disabled" : false
+}
